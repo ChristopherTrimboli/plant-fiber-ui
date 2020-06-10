@@ -1,0 +1,25 @@
+{
+  "name": "plant-fiber-ui",
+  "version": "1.0.0",
+  "description": "3D UI components for use with react-three-fiber. Includes WebXR support and Typescript driven documentation.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChrisEddy/plant-fiber-ui.git"
+  },
+  "author": "Chris Eddy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ChrisEddy/plant-fiber-ui/issues"
+  },
+  "homepage": "https://github.com/ChrisEddy/plant-fiber-ui#readme",
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-three-fiber": "^4.2.8",
+    "three": "^0.117.1"
+  }
+}
