@@ -1,9 +1,9 @@
-import React from 'react';
+import * as React from 'react'
 
 const Square = (props: any) => {
     return (
         <>
-            <p>LOL</p>
+            <p>Square</p>
         </>
     )
 }

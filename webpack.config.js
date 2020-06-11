@@ -1,10 +1,10 @@
 const path = require("path");
 
 module.exports = {
-  entry: './lib/index.js',
+  entry: './lib/index.tsx',
   output: {
     path: path.resolve(__dirname, "dist"),
-    filename: 'plant.fiber.ui.js',
+    filename: 'index.js',
     library: 'plant-fiber-ui',
     libraryTarget: 'umd'
   },
