@@ -3,7 +3,7 @@ import React from 'react';
 const Square = (props: any) => {
     return (
         <>
-            <p>Square</p>
+            <p>LOL</p>
         </>
     )
 }
