@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Square = (props) => {
+const Square = (props: any) => {
     return (
         <>
             <p>Square</p>
