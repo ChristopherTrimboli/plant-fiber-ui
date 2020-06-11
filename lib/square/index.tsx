@@ -1,17 +1,15 @@
 import * as React from 'react'
-import { useRef, useState }from 'react'
-import { useFrame } from 'react-three-fiber'
 
 const Square = (props: any) => {
     // This reference will give us direct access to the mesh
-    const mesh = useRef<HTMLElement>(null)
+    const mesh = props.useRef(null)
 
     // Set up state for the hovered and active state
-    const [hovered, setHover] = useState(false)
-    const [active, setActive] = useState(false)
+    const [hovered, setHover] = props.useState(false)
+    const [active, setActive] = props.useState(false)
 
     // Rotate mesh every frame, this is outside of React without overhead
-    useFrame(() => {
+    props.useFrame(() => {
         mesh.current['rotation'].x = mesh.current['rotation'].y += 0.01
     })
 

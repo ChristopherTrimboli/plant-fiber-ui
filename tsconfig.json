@@ -8,7 +8,7 @@
       "allowJs": false,
       "jsx": "react",
       "declaration": true,
-      "moduleResolution": "node",
+      "moduleResolution": "node"
     },
     "include": ["lib"],
     "exclude": ["node_modules", "dist"]

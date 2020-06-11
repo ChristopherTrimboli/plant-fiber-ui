@@ -9,6 +9,7 @@
     "dist"
   ],
   "scripts": {
+    "start": "webpack -w --config ./webpack.config.js",
     "test": "echo \"No tests... yet.\" && exit 0",
     "build": "webpack --config ./webpack.config.js"
   },
