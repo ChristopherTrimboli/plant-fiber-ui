@@ -10,8 +10,8 @@ declare global {
     }
 }
 
-import Square from './square';
+import Box from './box';
 
 export {
-    Square
+    Box
 }

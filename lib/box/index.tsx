@@ -1,6 +1,6 @@
 import * as React from 'react'
 
-const Square = (props: any) => {
+const Box = (props: any) => {
     // This reference will give us direct access to the mesh
     const mesh = props.useRef(null)
 
@@ -18,12 +18,12 @@ const Square = (props: any) => {
             {...props}
             ref={mesh}
             scale={active ? [1.5, 1.5, 1.5] : [1, 1, 1]}
-            onClick={(e) => setActive(!active)}
-            onPointerOver={(e) => setHover(true)}
-            onPointerOut={(e) => setHover(false)}>
+            onClick={(e: any) => props.onClick(e) || setActive(!active)}
+            onPointerOver={(e: any) => props.onPointerOver(e) ||  setHover(true)}
+            onPointerOut={(e: any) => props.onPointerOut(e) || setHover(false)}>
             <boxBufferGeometry attach="geometry" args={[1, 1, 1]} />
-            <meshStandardMaterial attach="material" color={hovered ? 'hotpink' : 'orange'} />
+            <meshStandardMaterial attach="material" color={props.color || 'orange'} />
         </mesh>
     )
 }
-export default Square;
+export default Box;

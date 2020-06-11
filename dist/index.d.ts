@@ -13,5 +13,5 @@ declare global {
         }
     }
 }
-import Square from './square';
-export { Square };
+import Box from './box';
+export { Box };
