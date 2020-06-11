@@ -2,7 +2,7 @@
   "name": "plant-fiber-ui",
   "version": "1.0.0",
   "description": "3D UI components for use with react-three-fiber. Includes WebXR support and Typescript driven documentation.",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
     "test": "echo \"No tests... yet.\" && exit 0"
   },
