@@ -1,8 +1,8 @@
 {
   "name": "plant-fiber-ui",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "3D UI components for use with react-three-fiber. Includes WebXR support and Typescript driven documentation.",
-  "main": "lib/index.js",
+  "main": "lib/index.tsx",
   "types": "lib/index.d.ts",
   "unpkg": "dist/plant-fiber-ui.js",
   "scripts": {
