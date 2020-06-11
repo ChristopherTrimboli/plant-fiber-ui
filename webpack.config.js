@@ -11,7 +11,8 @@ module.exports = {
   resolve: {
     extensions: [".ts", ".tsx", ".js"]
   },
-  mode: 'production',
+  mode: 'development',
+  devtool: 'eval-source-map',
   module: {
     rules: [
       {
