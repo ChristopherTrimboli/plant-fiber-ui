@@ -37,7 +37,7 @@ ReactDOM.render(
 
 # Components
 
-## Box
+## <Box \/>
 
 The first I thing made. Not that functional or fancy but does it's job.
 
