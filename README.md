@@ -5,6 +5,12 @@ The goal of this is to be like the Bootstrap of React threejs.
 
 Open to contributions and feature requests.
 
+IN EARLY DEVELOPMENT
+
+Docs Site: https://chriseddy.github.io/plant-fiber-ui-docs/index.html
+
+Demo Site: https://chriseddy.github.io/plant-fiber-ui-demo/index.html
+
 # Install
 
 `npm install plant-fiber-ui react react-dom react-three-fiber three`
