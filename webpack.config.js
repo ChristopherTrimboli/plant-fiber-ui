@@ -11,8 +11,14 @@ module.exports = {
   resolve: {
     extensions: [".ts", ".tsx", ".js"]
   },
-  mode: 'development',
-  devtool: 'eval-source-map',
+  mode: 'production',
+  devtool: 'cheap-source-map',
+  externals: [
+    "react",
+    "react-dom",
+    "three",
+    "react-three-fiber"
+  ],
   module: {
     rules: [
       {

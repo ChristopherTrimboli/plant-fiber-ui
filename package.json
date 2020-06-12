@@ -1,6 +1,6 @@
 {
   "name": "plant-fiber-ui",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "description": "3D UI components for use with react-three-fiber. Includes WebXR support and Typescript driven documentation.",
   "main": "dist/index.js",
   "types": "lib/index.d.ts",
@@ -32,12 +32,10 @@
     "javascript"
   ],
   "peerDependencies": {
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1"
-  },
-  "dependencies": {
-    "react-three-fiber": "^4.2.8",
-    "three": "^0.117.1"
+    "react": "16.x",
+    "react-dom": "16.x",
+    "react-three-fiber": "4.x",
+    "three": "0.x"
   },
   "devDependencies": {
     "@babel/core": "^7.10.2",
@@ -51,8 +49,10 @@
     "less-loader": "^6.1.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-three-fiber": "^4.2.8",
     "source-map-loader": "^1.0.0",
     "style-loader": "^1.2.1",
+    "three": "^0.117.1",
     "ts-loader": "^7.0.5",
     "typescript": "^3.9.5",
     "webpack": "^4.42.0",

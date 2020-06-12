@@ -1,14 +1,4 @@
-import * as React from 'react'
-
-declare global {
-    namespace JSX {
-        interface IntrinsicElements {
-            mesh: { },
-            boxBufferGeometry: { attach: string, args: Array<number> },
-            meshStandardMaterial: { attach: string, color: string }
-        }
-    }
-}
+import React from 'react'
 
 import Box from './box';
 
