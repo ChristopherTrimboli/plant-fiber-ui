@@ -11,18 +11,17 @@ Example `App.js`:
 
 ```jsx
 
-import React, { useRef, useState } from 'react'
+import React from 'react'
 import ReactDOM from 'react-dom';
-import { Square } from 'plant-fiber-ui';
-import { Canvas, useFrame } from 'react-three-fiber'
+import { Box } from 'plant-fiber-ui';
+import { Canvas } from 'react-three-fiber'
 
 const App = (props) => {
   return (
       <Canvas>
         <ambientLight />
         <pointLight position={[10, 10, 10]} />
-        <Square position={[-1.2, 0, 0]} useRef={useRef} useState={useState} useFrame={useFrame} />
-        <Square position={[1.2, 0, 0]} useRef={useRef} useState={useState} useFrame={useFrame} />
+        <Box />
       </Canvas>
   )
 }
@@ -33,8 +32,13 @@ ReactDOM.render(
 );
 ```
 
-`<Square />` is rendering into the Parent's `react-three-fiber` and React Context. For this reason we are passing the React hooks into `plant-fiber-ui` components like you see with `useRef={useRef}` and `useState={useState}`.
+## Goals 
 
-This is why we import the `<Canvas />` and `useFrame` from `react-three-fiber`. This allows you to use normal `react-three-fiber`, React, vanilla JS and `plant-fiber-ui` with each other in the same rendering context.
-
-Would love a solution to this Context sharing archetecture. hmu if you know a better way.
+- Forms, Buttons, Inputs
+- WebXR 
+- Controllers / Hands
+- Assets
+- Panels
+- Layout
+- Keyboard
+- more...
