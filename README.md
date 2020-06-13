@@ -29,7 +29,7 @@ Example `App.js`:
 ```jsx
 import React from 'react'
 import ReactDOM from 'react-dom';
-import { Canvas, Box } from 'plant-fiber-ui';
+import { Canvas, XRControllers, Box } from 'plant-fiber-ui';
 
 const App = (props) => {
   return (
@@ -37,6 +37,7 @@ const App = (props) => {
         <ambientLight />
         <pointLight position={[10, 10, 10]} />
         <Box />
+        <XRControllers onSqueezeEnd={(e) => console.log(e)}>
       </Canvas>
   )
 }
@@ -55,7 +56,23 @@ ReactDOM.render(
 
 ```<Canvas webxr={true} />```
 
-### webxr: *Boolean*
+## <XRControllers \/>
+
+**Example Usage** 
+
+```<XRControllers onSelect={(e) => console.log(e)} onSqueezeEnd={(e) => console.log(e)} />```
+
+### onSelect: *Function*
+
+### onSelectEnd: *Function*
+
+### onSelectStart: *Function*
+
+### onSqueeze: *Function*
+
+### onSqueezeEnd: *Function*
+
+### onSqueezeStart: *Function*
 
 ## <Box \/>
 
