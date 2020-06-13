@@ -1,4 +1,9 @@
 # plant-fiber-ui
+
+![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
+<a href="https://www.npmjs.com/package/plant-fiber-ui"><img src="https://img.shields.io/npm/v/plant-fiber-ui.svg"></a>
+![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)
+
 3D UI components for use with react-three-fiber. Includes WebXR support and Typescript driven documentation.
 
 The goal of this is to be like the Bootstrap of React threejs.
@@ -11,6 +16,8 @@ Docs Site: https://chriseddy.github.io/plant-fiber-ui-docs/index.html
 
 Demo Site: https://chriseddy.github.io/plant-fiber-ui-demo/index.html
 
+Glitch Playground: https://glitch.com/edit/#!/plant-fiber-ui
+
 # Install
 
 `npm install plant-fiber-ui react react-dom react-three-fiber three`
@@ -22,12 +29,11 @@ Example `App.js`:
 ```jsx
 import React from 'react'
 import ReactDOM from 'react-dom';
-import { Box } from 'plant-fiber-ui';
-import { Canvas } from 'react-three-fiber'
+import { Canvas, Box } from 'plant-fiber-ui';
 
 const App = (props) => {
   return (
-      <Canvas>
+      <Canvas webxr>
         <ambientLight />
         <pointLight position={[10, 10, 10]} />
         <Box />
@@ -43,13 +49,19 @@ ReactDOM.render(
 
 # Components
 
-## <Box \/>
-
-The first I thing made. Not that functional or fancy but does it's job.
+## <Canvas \/>
 
 **Example Usage** 
 
-```<Box color='red' position={[0, 0, 3]} onClick={(e) => yourFunction(e)} etc... />```
+```<Canvas webxr={true} />```
+
+### webxr: *Boolean*
+
+## <Box \/>
+
+**Example Usage** 
+
+```<Box color='red' position={[-0.5, 2, 1]} />```
 
 ### color: *String*
 

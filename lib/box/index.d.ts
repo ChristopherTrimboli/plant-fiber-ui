@@ -1,3 +1,3 @@
 /// <reference types="react" />
-declare const Square: (props: any) => JSX.Element;
-export default Square;
+declare const Box: (props: any) => JSX.Element;
+export default Box;

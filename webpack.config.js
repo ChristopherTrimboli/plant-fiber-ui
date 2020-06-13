@@ -12,7 +12,6 @@ module.exports = {
     extensions: [".ts", ".tsx", ".js"]
   },
   mode: 'production',
-  devtool: 'cheap-source-map',
   externals: [
     "react",
     "react-dom",
