@@ -16,7 +16,8 @@ module.exports = {
     "react",
     "react-dom",
     "three",
-    "react-three-fiber"
+    "react-three-fiber",
+    "react-xr"
   ],
   module: {
     rules: [
