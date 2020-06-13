@@ -1,3 +1,4 @@
 import Box from './box';
 import Canvas from './canvas';
-export { Box, Canvas };
+import XRControllers from './XRControllers';
+export { Box, Canvas, XRControllers };
