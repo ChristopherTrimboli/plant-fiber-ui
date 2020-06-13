@@ -20,7 +20,7 @@ Glitch Playground: https://glitch.com/edit/#!/plant-fiber-ui
 
 # Install
 
-`npm install plant-fiber-ui react react-dom react-three-fiber three`
+`npm install plant-fiber-ui react react-dom react-three-fiber three react-xr`
 
 # Get Started
 
