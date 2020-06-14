@@ -1,15 +1,15 @@
 {
   "name": "plant-fiber-ui",
-  "version": "0.0.20",
+  "version": "0.0.21",
   "description": "3D UI components for use with react-three-fiber. Includes WebXR support and Typescript driven documentation.",
   "main": "dist/index.js",
   "types": "lib/index.d.ts",
-  "unpkg": "dist/index.js",
   "files": [
     "dist"
   ],
   "scripts": {
     "start": "webpack -w --config ./webpack.config.js",
+    "link": "npm link react react-dom react-three-fiber react-xr three",
     "test": "echo \"No tests... yet.\" && exit 0",
     "build": "webpack --config ./webpack.config.js"
   },

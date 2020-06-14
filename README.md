@@ -37,7 +37,12 @@ const App = (props) => {
         <ambientLight />
         <pointLight position={[10, 10, 10]} />
         <Box />
-        <XRControllers onSqueezeEnd={(e) => console.log(e)}>
+        <XRControllers 
+        onSelect={(e) => console.log(e)} 
+        onSqueezeStart={(e) => console.log(e)} 
+        onSelectEnd={(e) => console.log(e)} 
+        onAxesChange={((axes, handedness) => console.log(axes, handedness))}
+      />
       </Canvas>
   )
 }
@@ -54,13 +59,24 @@ ReactDOM.render(
 
 **Example Usage** 
 
-```<Canvas webxr={true} />```
+```jsx
+<Canvas webxr={true} />
+```
 
 ## <XRControllers \/>
 
 **Example Usage** 
 
-```<XRControllers onSelect={(e) => console.log(e)} onSqueezeEnd={(e) => console.log(e)} />```
+```jsx
+  <XRControllers 
+    onSelect={(e) => console.log(e)} 
+    onSqueezeStart={(e) => console.log(e)} 
+    onSelectEnd={(e) => console.log(e)} 
+    onAxesChange={((axes, handedness) => console.log(axes, handedness))}
+  />
+  ```
+
+### onAxesChange: *Function* 
 
 ### onSelect: *Function*
 
@@ -78,7 +94,9 @@ ReactDOM.render(
 
 **Example Usage** 
 
-```<Box color='red' position={[-0.5, 2, 1]} />```
+```jsx
+<Box color='red' position={[-0.5, 2, 1]} />
+```
 
 ### color: *String*
 
