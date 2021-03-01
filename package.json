@@ -54,7 +54,7 @@
     "react-xr": "^1.0.6",
     "source-map-loader": "^1.0.0",
     "style-loader": "^1.2.1",
-    "three": "^0.117.1",
+    "three": "^0.125.0",
     "ts-loader": "^7.0.5",
     "typescript": "^3.9.5",
     "webpack": "^4.42.0",
